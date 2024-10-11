@@ -1,0 +1,48 @@
+.background{
+
+    background: url("images/JosefTolda.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 680px; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.logo{
+
+    
+}
+
+.underliner{
+    background-color: rgba(36, 36, 36, 0.395);
+}
+
+._nav-underline{
+     border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+._nav-underline:hover{
+    border-bottom: 2px solid white;
+}
+
+.nav-custom{
+
+    font-family: "Lucida";
+    font-weight: bold;
+    color: rgb(35, 224, 180);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.301);
+
+}
+
+.signature-text{
+
+    font-style: italic;
+    color: rgb(35, 224, 180);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.301);
+
+}
+
+/*
+    font: 1.2rem "Courier New";
+    font-weight: bold;
