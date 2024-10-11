@@ -1,48 +1,136 @@
 .background{
 
-    background: url("images/JosefTolda.jpg") no-repeat;
+    background: url("images/main.jpg") no-repeat;
     background-size: cover;
     background-position: top;
-    height: 680px; /* Full viewport height */
+    
     display: flex;
     flex-direction: column;
 
 }
 
+/* ČERNÉ POZADÍ */
+.backgroundBlack{
 
-.logo{
-
+    background-color: black;
     
+    display: flex;
+    flex-direction: column;
+
 }
 
+.logo {
+
+    width: 400px;
+    padding-top: 150px;
+
+}
+
+/* PODTRŽENÍ NAVIGAČNÍHO PANELU */
 .underliner{
-    background-color: rgba(36, 36, 36, 0.395);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* PODTRŽENÍ NAVIGAČNÍHO PANELU */
 ._nav-underline{
      border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
+
+/* PODTRŽENÍ NAVIGAČNÍHO PANELU - KURZOR */
 ._nav-underline:hover{
     border-bottom: 2px solid white;
 }
 
+.navImage{
+    width: 30px;
+    height: 30px;;
+    border-radius: 100%;
+}
+
+/* STÍN TEXTU NAVIGAČNÍHO PANELU */
 .nav-custom{
 
     font-family: "Lucida";
     font-weight: bold;
-    color: rgb(35, 224, 180);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.301);
+    color: #23e0b4;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.30);
 
 }
 
+/* HLAVNÍ TEXT */
 .signature-text{
 
     font-style: italic;
-    color: rgb(35, 224, 180);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.301);
+    color: #23e0b4;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
 
 }
 
-/*
-    font: 1.2rem "Courier New";
+.borders{
+    border: 2px solid rgba(210, 18, 18, 0);
+}
+
+.nadpis{
+    font-family: "Arial";
     font-weight: bold;
+}
+
+.referenceImage{
+    width: 150px;
+    height: 150px;;
+    border-radius: 100%;
+}
+
+
+/*
+#23e0b4;
+
+
+
+
+            <script>
+                var variableText = "AHOJ";
+                document.getElementById("_help_sm").innerText = variableText;
+                document.getElementById("_help_md").innerText = variableText;
+                document.getElementById("_help_lg").innerText = variableText;
+            </script>
+
+
+
+        <!-- HEADER & NAVIGACE -->
+    <header class="">
+        <div class="background">
+        <div class="contanier">
+            <div class="row">
+                
+                 <!--NAVIGACE -->
+                <div class="container borders d-flex align-items-center justify-content-end | underliner">
+                    <nav class="d-none d-md-block">
+                        <ul class="nav">
+                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">O MNĚ</span></a></li>
+                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">SLUŽBY</span></a></li>
+                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">BLOG</span></a></li>
+                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">REFERENCE</span></a></li>
+                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">KONTAKT</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--UKONČENÍ NAVIGACE -->
+
+                <!--LOGO -->
+                <div class="container borders"><img  class="d-none d-md-block | image-fluid col-md-2 | logo " src="images/JosefTolda - Logo.png" alt="logo"></div>
+
+                <!--SIGNATURE TEXT -->
+                <section class="container">
+                    <div class="col-12 container-full borders | d-flex flex-column | justify-content-end align-items-center text-center">
+                        <p class="signature-text    | fs-5 fw-bold      | borders"   id="_help_sm">CASCAS</p>
+                    </div>        
+                </section>
+
+
+
+                               
+            </div>
+        </div>
+    </div>
+    </header>
