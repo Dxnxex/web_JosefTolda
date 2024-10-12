@@ -1,6 +1,60 @@
+:root {
+    --mainColor: #23e0e4;
+    --mainBackgroundLight: #ffffff;
+    --mainBackgroundDark: #3a3b4b;
+    --borders:0;
+}
+
+/* FONTY */
+.fontMain{
+
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.fontBig{
+
+    font-family: "Pattaya", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* STÍN TEXTU NAVIGAČNÍHO PANELU */
+.fontNav{
+
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: bold;
+
+
+    color: var(--mainColor);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.30);
+
+}
+
+.fontSignature{
+
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+.mainColor{
+
+    color: var(--mainColor);
+}
+
+
 .background{
 
-    background: url("images/main.jpg") no-repeat;
+    background: url("images/JosefTolda3.png") no-repeat;
     background-size: cover;
     background-position: top;
     
@@ -10,25 +64,34 @@
 }
 
 /* ČERNÉ POZADÍ */
-.backgroundBlack{
+.backgroundDark{
 
-    background-color: black;
+    background-color: var(--mainBackgroundDark);
     
     display: flex;
     flex-direction: column;
 
 }
 
+.container-full {
+    height: 30vh; /* Set height for the container */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Align children vertically */
+    justify-content: flex-end; /* Align items to the bottom */
+}
+
 .logo {
 
-    width: 400px;
-    padding-top: 150px;
+    width: 250px;
+    padding-top: 280px;
+    filter: drop-shadow(4px 4px 6px var(--mainColor));
 
 }
 
+
 /* PODTRŽENÍ NAVIGAČNÍHO PANELU */
 .underliner{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* PODTRŽENÍ NAVIGAČNÍHO PANELU */
@@ -47,33 +110,23 @@
     border-radius: 100%;
 }
 
-/* STÍN TEXTU NAVIGAČNÍHO PANELU */
-.nav-custom{
 
-    font-family: "Lucida";
-    font-weight: bold;
-    color: #23e0b4;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.30);
-
-}
 
 /* HLAVNÍ TEXT */
 .signature-text{
 
     font-style: italic;
-    color: #23e0b4;
+    color: var(--mainColor);
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
 
 }
 
 .borders{
-    border: 2px solid rgba(210, 18, 18, 0);
+    border: 2px solid rgba(210, 18, 18, var(--borders));
+
 }
 
-.nadpis{
-    font-family: "Arial";
-    font-weight: bold;
-}
+
 
 .referenceImage{
     width: 150px;
@@ -82,55 +135,74 @@
 }
 
 
+.introduce{
+
+    font-style: italic;
+
+}
+
+/*SERVICES*/
+.imageServices{
+
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+
+}
+
+._bordersServices{
+    border-right: 6px solid var(--mainColor);
+    border-style: groove;
+}
+
+.colorServices{
+
+    color: var(--mainColor);
+
+}
+
+.colorServicesLong{
+
+    color: #b8e7e8;
+
+}
+
+
+.infokruhy {
+
+    width: 200px;
+    height: 200px;
+
+    border: 4px solid var(--mainColor);
+    border-radius: 100%;
+
+    color: var(--mainColor);
+    
+    font-size: 3rem;
+
+}
+
+
+.logoPartners{
+
+    width: 150px;
+
+}
+
+
+.bordersFooter{
+
+    border: 0px solid grey;
+    border-top: 6px solid var(--mainColor);
+    border-style: solid;
+
+}
+
+
+
 /*
-#23e0b4;
-
-
-
-
-            <script>
-                var variableText = "AHOJ";
-                document.getElementById("_help_sm").innerText = variableText;
-                document.getElementById("_help_md").innerText = variableText;
-                document.getElementById("_help_lg").innerText = variableText;
-            </script>
-
-
-
-        <!-- HEADER & NAVIGACE -->
-    <header class="">
-        <div class="background">
-        <div class="contanier">
-            <div class="row">
-                
-                 <!--NAVIGACE -->
-                <div class="container borders d-flex align-items-center justify-content-end | underliner">
-                    <nav class="d-none d-md-block">
-                        <ul class="nav">
-                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">O MNĚ</span></a></li>
-                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">SLUŽBY</span></a></li>
-                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">BLOG</span></a></li>
-                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">REFERENCE</span></a></li>
-                            <li class="nav-item px-2 _nav-underline"><a class="nav-link active" href="#" aria-current="page"><span class="nav-custom fs-5">KONTAKT</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!--UKONČENÍ NAVIGACE -->
-
-                <!--LOGO -->
-                <div class="container borders"><img  class="d-none d-md-block | image-fluid col-md-2 | logo " src="images/JosefTolda - Logo.png" alt="logo"></div>
-
-                <!--SIGNATURE TEXT -->
-                <section class="container">
-                    <div class="col-12 container-full borders | d-flex flex-column | justify-content-end align-items-center text-center">
-                        <p class="signature-text    | fs-5 fw-bold      | borders"   id="_help_sm">CASCAS</p>
-                    </div>        
-                </section>
-
-
-
-                               
-            </div>
-        </div>
-    </div>
-    </header>
