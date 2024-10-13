@@ -1,8 +1,17 @@
 :root {
+    --mainColor: #69d7ff;
+    --mainColor: #dfc6b8;
+
     --mainColor: #23e0e4;
     --mainBackgroundLight: #ffffff;
     --mainBackgroundDark: #3a3b4b;
     --borders:0;
+}
+
+.Warning{
+
+    background-color: red;
+
 }
 
 /* FONTY */
@@ -12,6 +21,7 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    filter: brightness(0.8);
 
 }
 
@@ -26,10 +36,11 @@
 /* STÍN TEXTU NAVIGAČNÍHO PANELU */
 .fontNav{
 
-    font-family: "Bellefair", serif;
-    font-weight: 400;
-    font-style: bold;
-
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 
     color: var(--mainColor);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.30);
@@ -54,14 +65,45 @@
 
 .background{
 
-    background: url("images/JosefTolda3.png") no-repeat;
+    background: url("images/JosefTolda11.jpg") no-repeat;
     background-size: cover;
     background-position: top;
     
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+
+
 
 }
+
+
+.backgroundLogo{
+
+    position: fixed;
+    
+    background: url("images/JosefTolda - Logo 2.png");
+    background-size: cover;  /* Cover the entire background area */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+    
+    width: 30vh;
+    height: 30vh;
+
+    filter: drop-shadow(4px 4px 6px var(--mainColor));
+
+    z-index: 1;
+
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+    opacity: 1; /* Fully visible initially */
+
+}
+
+        @media (min-width: 0px) {.backgroundLogo {background-size: 40%;     left: -6vh;     top: 10vh;}}
+        @media (min-width: 768px) {.backgroundLogo {background-size: 60%;   left: 5vh;     top: 10vh;}}
+        @media (min-width: 992px) {.backgroundLogo {background-size: 80%;   left: 20vh;     top: 10vh;}}
+        @media (min-width: 1200px) {.backgroundLogo {background-size: 100%; left: 40vh;      top: 20vh;}}
+
+
+
 
 /* ČERNÉ POZADÍ */
 .backgroundDark{
@@ -73,25 +115,32 @@
 
 }
 
-.container-full {
-    height: 30vh; /* Set height for the container */
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Align children vertically */
-    justify-content: flex-end; /* Align items to the bottom */
-}
+/* ČERNÉ POZADÍ */
+.backgroundLight{
 
-.logo {
-
-    width: 250px;
-    padding-top: 280px;
-    filter: drop-shadow(4px 4px 6px var(--mainColor));
+    background-color: var(--mainBackgroundLight);
+    
+    display: flex;
+    flex-direction: column;
 
 }
 
+
+
+.signatureText {
+
+    height: 20vh;
+    padding-top: 90vh;
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+
+}
 
 /* PODTRŽENÍ NAVIGAČNÍHO PANELU */
 .underliner{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 /* PODTRŽENÍ NAVIGAČNÍHO PANELU */
@@ -168,7 +217,8 @@
 
 .colorServicesLong{
 
-    color: #b8e7e8;
+    color: var(--mainColor);
+    filter: brightness(0.9) contrast(0.9);
 
 }
 
@@ -182,7 +232,8 @@
     border-radius: 100%;
 
     color: var(--mainColor);
-    
+   
+    filter: brightness(0.8);    
     font-size: 3rem;
 
 }

@@ -14,7 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Bellefair&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Pattaya&display=swap" rel="stylesheet">
 
 
 
@@ -23,7 +23,12 @@
 <body>
     
     <!-- HEADER & NAVIGACE -->
+
+    <div class="Warning | fw-bold">Na webu se pracuje, jedná se o pracovní verzi: 0.0.2</div>
+
 <div class="background">
+    
+    
     <div class="">
         
         <!--NAVIGACE -->
@@ -41,15 +46,18 @@
         </div>
         <!--UKONČENÍ NAVIGACE -->
 
+        <!--LOGO -->
+        <div class="borders backgroundLogo"><img  class="d-none d-md-block | image-fluid col-md-2 "></div>
+
         <header class="container">
             <div class="row py-3">
 
-                    <!--LOGO -->
-                    <div class="borders"><img  class="d-none d-md-block | image-fluid col-md-2 | logo" src="images/JosefTolda - Logo 2.png" alt="Logo"></div>
+                    
+                    
 
                     <!--SIGNATURE TEXT -->
                     <section class="">
-                        <div class="col-12 container-full borders | d-flex flex-column | justify-content-end align-items-center text-center">
+                        <div class="col-12 borders | d-flex flex-column | justify-content-end align-items-center text-center | signatureText">
 
                             <p class="signature-text  | d-block d-sm-block d-md-none    | fs-6 fw-bold      | borders | fontSignature"      id="_help_sm"></p>
                             <p class="signature-text  | d-none d-md-block d-lg-none     | fs-4 fw-bold      | borders | fontSignature"      id="_help_md"></p>
@@ -121,24 +129,25 @@
 
 
 <!--INFOKRUHY | KONEC -->
-<div class="">
+<div class="backgroundLight">
     <section class="container |py-5">
         <div class="row | text-center | borders">
             <div class="col-sm-12 col-md | py-3 | text-center d-flex flex-column align-items-center">
                 <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig">0</div>
-                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain">POBOČEK V ČR</div>
+                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain">BANKOVNÍ PRAXE</div>
+            </div>
+<!--
+            <div class="col-sm-12 col-md text-center d-flex flex-column align-items-center py-3">
+                <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig">0</div>
+                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain">SPOKOJENÝCH KLIENTŮ</div>
             </div>
 
             <div class="col-sm-12 col-md text-center d-flex flex-column align-items-center py-3">
                 <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig">0</div>
-                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain">ZAKÁZEK ROČNĚ</div>
-            </div>
-
-            <div class="col-sm-12 col-md text-center d-flex flex-column align-items-center py-3">
-                <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig">0</div>
-                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain">LET PRAXE</div>
+                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain"></div>
             </div>
         </div>
+        -->
     </section>
 </div>
 <!--INFOKRUHY | KONEC -->
@@ -186,6 +195,7 @@
 
 
 <!--REFERENCE | ZAČÁTEK -->
+<div class="backgroundLight">
 <article class="container ">
     <div class="row | justify-content-end align-items-center text-center">
     
@@ -214,7 +224,59 @@
     
         </div>
     </article>
+</div>
 <!--REFERENCE | KONEC -->
+
+<!--KONTAKT | ZAČÁTEK -->
+<div class="backgroundDark">
+    <article class="container ">
+        <div class="row | justify-content-end align-items-center text-center">
+
+            <section class="col-12 col-sm-9 col-md-12 borders ">
+                    
+                <div class="container my-5">
+                    
+                    <h2 class="text-center mb-4 | fontBig">KONTAKTUJE MĚ</h2>
+                
+                    
+                    
+
+                    <form action="contact.php" method="POST">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Jméno</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Vaše jméno" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Váš email" required>
+                            </div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefon</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Váš telefon">
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Zpráva</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Vaše zpráva" required></textarea>
+                        </div>
+                
+                
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Odeslat</button>
+                        </div>
+                    </form>
+                </div>
+
+
+            </section>   
+        
+            </div>
+        </article>
+    </div>
+<!--KONTAKT | KONEC -->
 
 <div class="backgroundLight">
     <div class="container | justify-content-end align-items-center text-center ">
@@ -256,8 +318,8 @@
 <script>
 
     let numbers = [
-        { current: 0, max: 80, interval: 1 , add:"+"},
-        { current: 0, max: 70, interval: 2 , add:"?"},
+        { current: 0, max: 22, interval: 1 , add:""},
+        { current: 0, max: 1500, interval: 15 , add:"+"},
         { current: 0, max: 900, interval: 6 , add:"!"}
     ];
 
@@ -290,9 +352,19 @@
 
     observer.observe(counterElements[0]); 
 
+
+
 </script>
 
-
+    
+<script>
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        let viewportHeight = window.innerHeight/5;
+        let background = document.querySelector('.backgroundLogo');
+        if (scrollTop > viewportHeight) {background.style.opacity = '0';  } else {background.style.opacity = '1'; }
+    });
+</script>
 
 
 
