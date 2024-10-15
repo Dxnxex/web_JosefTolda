@@ -56,7 +56,7 @@
 
                     <!--SIGNATURE TEXT -->
                     <section class="">
-                        <div class="col-12 borders | d-flex flex-column | justify-content-end align-items-center text-center | signatureText">
+                        <div class="col-12 borders | d-flex flex-column | justify-content-end align-items-end text-center | signatureText">
 
                             <p class="signature-text  | d-block d-sm-block d-md-none    | fs-6 fw-bold      | borders | fontSignature"      id="_help_sm"></p>
                             <p class="signature-text  | d-none d-md-block d-lg-none     | fs-4 fw-bold      | borders | fontSignature"      id="_help_md"></p>
@@ -127,18 +127,17 @@
                 <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig">0</div>
                 <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain">BANKOVNÍ PRAXE</div>
             </div>
-<!--
-            <div class="col-sm-12 col-md text-center d-flex flex-column align-items-center py-3">
-                <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig">0</div>
-                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain">SPOKOJENÝCH KLIENTŮ</div>
-            </div>
 
             <div class="col-sm-12 col-md text-center d-flex flex-column align-items-center py-3">
                 <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig">0</div>
-                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain"></div>
+                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain">SPOKOJENÝCH EXTERNÍCH PARTNERŮ</div>
+            </div>
+
+            <div class="col-sm-12 col-md text-center d-flex flex-column align-items-center py-3">
+                <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig"></div>
+                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold mainColor | fontMain">KONZULTOVANÝCH HYPOTÉK</div>
             </div>
         </div>
-        -->
     </section>
 </div>
 <!--INFOKRUHY | KONEC -->
@@ -268,17 +267,27 @@
             
             
             <p>
-                <h2 class="fs-1 | fontBig">SPOLUPRACUJI</h2>
+                <h2 class="fs-1 | fontBig">STAVEBNÍ SPOŘENÍ</h2>
             </p>
         
+            <img src="images/partners_MP.png" alt="Modrá pyramida stavební spořitelna, a.s." srcset="" class="logoPartners | px-3">
+            <img src="images/partners_RBstavebni.png" alt="Raiffeisen stavební spořitelna a.s." srcset="" class="logoPartners | px-3">
+            <img src="images/partners_SSČS.png" alt="Stavební spořitelna České spořitelny, a.s." srcset="" class="logoPartners | px-3">
 
         
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/CSOB_logo.jpg" alt="" srcset="" class="logoPartners | px-3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/%C4%8Cesk%C3%A1_spo%C5%99itelna_-_logo_2023.png/800px-%C4%8Cesk%C3%A1_spo%C5%99itelna_-_logo_2023.png" alt="" srcset="" class="logoPartners | px-3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Raiffeisen_Bank_2023_logo.svg" alt="" srcset="" class="logoPartners | px-3">
-        <img src="https://prowly-prod.s3.eu-west-1.amazonaws.com/uploads/5104/assets/312439/large-f436e67ae7b57fffd60c4dd506daca57.jpg" alt="" srcset="" class="logoPartners | px-3">
-        <img src="https://www.cmhas.cz/wp-content/uploads/2023/12/Modra-pyramida-logo.webp" alt="" srcset="" class="logoPartners | px-3">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Komer%C4%8Dn%C3%AD_banka_logo.svg/800px-Komer%C4%8Dn%C3%AD_banka_logo.svg.png" alt="" srcset="" class="logoPartners | px-3">
+
+
+        <p>
+            <h2 class="fs-1 | fontBig">ÚVERY</h2>
+        </p>
+
+        <img src="images/partners_CSAS.png" alt="Česká spořitelna, a.s." srcset="" class="logoPartners | px-3">
+        <img src="images/partners_CSOB.png" alt="ČSOB Hypoteční banka, a.s." srcset="" class="logoPartners | px-3">
+        <img src="images/partners_UNI.png" alt="UniCredit Bank, a.s." srcset="" class="logoPartners | px-3">
+        <img src="images/partners_RB.png" alt="Raiffeisenbank a.s." srcset="" class="logoPartners | px-3">
+        <img src="images/partners_KB.png" alt="Komerční banka, a.s." srcset="" class="logoPartners | px-3">
+        <img src="images/partners_Mbank.png" alt="mBank S.A." srcset="" class="logoPartners | px-3">
+        <img src="images/partners_Ober.png" alt="Oberbank AG" srcset="" class="logoPartners | px-3">
 
         </section>
         
@@ -292,7 +301,7 @@
 
 <!--SCRIPT PRO ZMĚNU TEXTU-->
 <script>
-    var signatureText = "\"VŠECHNO LZE, CHCE TO JEN CHTÍT!\"";
+    var signatureText = "\"VŠECHNO JDE, CHCE TO JEN CHTÍT!\"";
     document.getElementById("_help_sm").innerText = signatureText;
     document.getElementById("_help_md").innerText = signatureText;
     document.getElementById("_help_lg").innerText = signatureText;
@@ -302,7 +311,9 @@
 <script>
 
     let numbers = [
-        { current: 0, max: 22, interval: 1 , add:""}
+        { current: 0, max: 28, interval: 1 , add:""},
+        { current: 0, max: 100, interval: 3 , add:"+"},
+        { current: 0, max: 1000, interval: 27 , add:"+"}
     ];
 
     
@@ -316,7 +327,7 @@
                     num.current += num.interval; 
                     counterElements[index].textContent = num.current; 
                 } else {
-                    clearInterval(intervalId); counterElements[index].textContent = num.current+num.add; 
+                    clearInterval(intervalId); counterElements[index].textContent = num.max+num.add; 
                 }
             }, 100 );
         });
@@ -363,14 +374,11 @@
 
 
 <footer>
-
     <div class="backgroundDark text-white | py-4 | bordersFooter">
         <div class="container | justify-content-end align-items-center text-center ">
             Vytvořil Daniel Tolda
         </div>
     </div>
-
-
 </footer>
 
 

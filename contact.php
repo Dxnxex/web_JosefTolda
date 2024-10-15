@@ -20,7 +20,7 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;  // Použijte SMTPS pro SSL
     $mail->Port = 465;  // Port pro SSL
 
-    // Nastavení odesílatele
+    // Nastavení odesílatele\
     $mail->setFrom('email@joseftolda.cz', 'Daniel Tolda'); // Od koho e-mail přijde
 
     // Nastavení příjemce

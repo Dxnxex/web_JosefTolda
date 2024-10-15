@@ -92,10 +92,10 @@
 
 }
 
-        @media (min-width: 0px) {.backgroundLogo {background-size: 40%;     left: -6vh;     top: 10vh;}}
-        @media (min-width: 768px) {.backgroundLogo {background-size: 60%;   left: 5vh;     top: 10vh;}}
-        @media (min-width: 992px) {.backgroundLogo {background-size: 80%;   left: 20vh;     top: 10vh;}}
-        @media (min-width: 1200px) {.backgroundLogo {background-size: 100%; left: 40vh;      top: 20vh;}}
+        @media (min-width: 0px) {.backgroundLogo {background-size: 30%;     left: -10vh;     top: 10vh;}}
+        @media (min-width: 768px) {.backgroundLogo {background-size: 60%;   left: 0vh;     top: 10vh;}}
+        @media (min-width: 992px) {.backgroundLogo {background-size: 80%;   left: 10vh;     top: 10vh;}}
+        @media (min-width: 1200px) {.backgroundLogo {background-size: 100%; left: 10vh;      top: 20vh;}}
 
 
 
