@@ -7,24 +7,28 @@ require 'PHPMailer-master/src/Exception.php';
 require 'PHPMailer-master/src/PHPMailer.php';
 require 'PHPMailer-master/src/SMTP.php';
 
+require 'vendor/autoload.php';
+
 // Vytvoř instanci PHPMailer
 $mail = new PHPMailer(true);
 
 try {
-    // Nastavení SMTP
-    $mail->isSMTP();
-    $mail->Host = 'smtp.websupport.cz';  // SMTP server hostingu
-    $mail->SMTPAuth = true;
-    $mail->Username = 'email@joseftolda.cz';  // Tvůj e-mail na hostingu
-    $mail->Password = 't$b?-o,,!=eT|ffx95J1'; // Zde vložte své heslo
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;  // Použijte SMTPS pro SSL
-    $mail->Port = 465;  // Port pro SSL
 
-    // Nastavení odesílatele\
-    $mail->setFrom('email@joseftolda.cz', 'Daniel Tolda'); // Od koho e-mail přijde
+   // SMTP nastavení pomocí proměnných z .env
+   $mail->isSMTP();
+   $mail->Host = $_ENV['SMTP_HOST'];      
+   $mail->SMTPAuth = true;
+   $mail->Username = $_ENV['SMTP_USERNAME']; 
+   $mail->Password = $_ENV['SMTP_PASSWORD'];
+   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+   $mail->Port = $_ENV['SMTP_PORT'];       
 
-    // Nastavení příjemce
-    $mail->addAddress('email@joseftolda.cz');  // E-mail příjemce, můžeš přidat více příjemců
+       // Nastavení odesílatele\
+       $mail->setFrom('email@joseftolda.cz', 'Daniel Tolda');
+
+       // Nastavení příjemce
+       $mail->addAddress('email@joseftolda.cz');
+
 
     // Shromáždění dat z formuláře
     $name = htmlspecialchars(trim($_POST['name']));

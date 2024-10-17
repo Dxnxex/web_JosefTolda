@@ -1,8 +1,12 @@
 :root {
-    --mainColor: #69d7ff;
-    --mainColor: #dfc6b8;
 
-    --mainColor: #23e0e4;
+    --colorLight: #69d7ff;
+    --colorLight: #dfc6b8;
+
+    --colorLight: #23e0e4;
+    --colorDark: #ef00a3;
+    --colorDark: #323232;
+
     --mainBackgroundLight: #ffffff;
     --mainBackgroundDark: #3a3b4b;
     --borders:0;
@@ -32,6 +36,16 @@
 
     }
 
+    .fontBig2{
+
+        font-family: "DM Serif Text", serif;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+
+
     /* STÍN TEXTU NAVIGAČNÍHO PANELU */
     .fontNav{
 
@@ -40,8 +54,9 @@
         font-style: normal;
         font-variation-settings: "slnt" 0;
 
-        color: var(--mainColor);
+        color: var(--colorLight);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.30);
+
 
     }
 
@@ -55,13 +70,19 @@
 
 
 /* COLORS */
-
-
-.mainColor{
-
-    color: var(--mainColor);
+.colorLight{
+    color: var(--colorLight);
 }
 
+.colorWhite{
+    color: #ffffff;
+}
+
+.colorDark{
+    color: var(--colorDark);
+}
+
+/* IMAGES */
 
 .background{
 
@@ -73,6 +94,27 @@
 
 }
 
+
+
+.backgroundOMne {
+
+    background: url("https://freerangestock.com/sample/149122/top-view-group-business-people-wide-background.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+    height: 45vh;
+
+}
+
+.backgroundSluzby{
+
+    background: url("https://as1.ftcdn.net/v2/jpg/04/53/77/94/1000_F_453779401_ALA2SfGSKMDoTaYj2hOFf34HBOdpHqyC.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+    height: 45vh;
+
+}
 
 .backgroundLogo{
 
@@ -86,7 +128,7 @@
     width: 30vh;
     height: 30vh;
 
-    filter: drop-shadow(4px 4px 6px var(--mainColor));
+    filter: drop-shadow(4px 4px 6px var(--colorLight));
 
     z-index: 1;
 
@@ -95,10 +137,10 @@
 
 }
 
-        @media (min-width: 0px) {.backgroundLogo {background-size: 30%;     left: -10vh;     top: 10vh;}}
+        @media (min-width: 0px) {.backgroundLogo {background-size: 30%;     left: -8vh;     top: 10vh;}}
         @media (min-width: 768px) {.backgroundLogo {background-size: 60%;   left: 0vh;     top: 10vh;}}
-        @media (min-width: 992px) {.backgroundLogo {background-size: 80%;   left: 10vh;     top: 10vh;}}
-        @media (min-width: 1200px) {.backgroundLogo {background-size: 100%; left: 10vh;      top: 20vh;}}
+        @media (min-width: 992px) {.backgroundLogo {background-size: 80%;   left: 15vh;     top: 10vh;}}
+        @media (min-width: 1200px) {.backgroundLogo {background-size: 100%; left: 40vh;      top: 20vh;}}
 
 
 
@@ -128,7 +170,7 @@
 .signatureText {
 
     height: 20vh;
-    padding-top: 85vh;
+    padding-top: 77vh;
 
     display: flex; 
     flex-direction: column; 
@@ -163,7 +205,7 @@
 .signature-text{
 
     font-style: italic;
-    color: var(--mainColor);
+    color: var(--colorLight);
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
 
 }
@@ -203,19 +245,19 @@
 }
 
 ._bordersServices{
-    border-right: 6px solid var(--mainColor);
+    border-right: 6px solid var(--colorLight);
     border-style: groove;
 }
 
 .colorServices{
 
-    color: var(--mainColor);
+    color: var(--colorLight);
 
 }
 
 .colorServicesLong{
 
-    color: var(--mainColor);
+    color: var(--colorLight);
     filter: brightness(0.9) contrast(0.9);
 
 }
@@ -226,10 +268,10 @@
     width: 200px;
     height: 200px;
 
-    border: 4px solid var(--mainColor);
+    border: 4px solid var(--colorDark);
     border-radius: 100%;
 
-    color: var(--mainColor);
+    color: var(--colorDark);
    
     filter: brightness(0.8);    
     font-size: 3rem;
@@ -238,16 +280,17 @@
 
 
 .logoPartners{
-
-    width: 200px;
-
+    width: 130px;
 }
+
+    @media (min-width: 0px) {.logoPartners {    width: 130;    }}
+    @media (min-width: 768px) {.logoPartners {    width: 210px;    }}
 
 
 .bordersFooter{
 
     border: 0px solid grey;
-    border-top: 6px solid var(--mainColor);
+    border-top: 6px solid var(--colorLight);
     border-style: solid;
 
 }

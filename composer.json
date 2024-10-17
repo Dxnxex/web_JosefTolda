@@ -1,0 +1,18 @@
+{
+    "name": "dxnxex/web_josef-tolda",
+    "autoload": {
+        "psr-4": {
+            "Dxnxex\\WebJosefTolda\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dxnxex",
+            "email": "dxnxex@seznam.cz"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "*",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
