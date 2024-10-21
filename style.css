@@ -2,19 +2,31 @@
 
     --colorLight: #69d7ff;
     --colorLight: #dfc6b8;
-
     --colorLight: #23e0e4;
-    --colorDark: #ef00a3;
-    --colorDark: #323232;
+    --colorLight: #00dfe3;
+
+
+    --colorLight: #ffffff;
+    --colorLightBig: #00fbff;
+    --colorLightBig: #00b1b4;
+
+
+    --colorDark: #3a484b;
+    --colorDarkBig: #0f6263;;
+    --colorDarkBig: #00b1b4;;
+
+
 
     --mainBackgroundLight: #ffffff;
     --mainBackgroundDark: #3a3b4b;
+
     --borders:0;
 }
 
 .Warning{
 
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.347);
+    color: white;
 
 }
 
@@ -22,23 +34,14 @@
     .fontMain{
 
         font-family: "Dosis", sans-serif;
-        font-weight: 500;
+        font-weight: normal;
         font-style: normal;
-        filter: brightness(0.8);
 
     }
 
     .fontBig{
 
         font-family: "Pattaya", serif;
-        font-weight: 400;
-        font-style: normal;
-
-    }
-
-    .fontBig2{
-
-        font-family: "DM Serif Text", serif;
         font-weight: 400;
         font-style: normal;
 
@@ -60,13 +63,6 @@
 
     }
 
-    .fontSignature{
-
-        font-family: "Dancing Script", cursive;
-        font-weight: 400;
-        font-style: italic;
-
-    }
 
 
 /* COLORS */
@@ -74,19 +70,48 @@
     color: var(--colorLight);
 }
 
-.colorWhite{
-    color: #ffffff;
+.colorLightBold{
+    color: var(--colorLight);
+    font-weight: bold;
 }
+
+.colorLightBig{
+    color: var(--colorLightBig);
+}
+
+.colorLightBigBold{
+    color: var(--colorLightBig);
+    font-weight: bold;
+}
+
 
 .colorDark{
     color: var(--colorDark);
 }
 
+.colorDarkBold{
+    color: var(--colorDark);
+    font-weight: bold;
+}
+
+.colorDarkBig{
+    color: var(--colorDarkBig);
+}
+
+.colorDarkBigBold{
+    color: var(--colorDarkBig);
+    font-weight: bold;
+}
+
+
+
+
+
 /* IMAGES */
 
 .background{
 
-    background: url("images/JosefTolda11.jpg") no-repeat;
+    background: url(images/JosefTolda11.jpg) no-repeat;
     background-size: cover;
     background-position: top;
     
@@ -98,9 +123,9 @@
 
 .backgroundOMne {
 
-    background: url("https://freerangestock.com/sample/149122/top-view-group-business-people-wide-background.jpg") no-repeat;
+    background: url(images/images/image_4.jpg) no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     
     height: 45vh;
 
@@ -108,9 +133,9 @@
 
 .backgroundSluzby{
 
-    background: url("https://as1.ftcdn.net/v2/jpg/04/53/77/94/1000_F_453779401_ALA2SfGSKMDoTaYj2hOFf34HBOdpHqyC.jpg") no-repeat;
+    background: url(images/images/image_3.jpg) no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     
     height: 45vh;
 
@@ -121,26 +146,29 @@
     position: fixed;
     
     background: url("images/JosefTolda - Logo 2.png");
-    background-size: cover;  /* Cover the entire background area */
-    background-position: center;  /* Center the image */
-    background-repeat: no-repeat;  /* Prevent the image from repeating */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
-    width: 30vh;
-    height: 30vh;
+    width: 55vh;
+    height: 55vh;
 
-    filter: drop-shadow(4px 4px 6px var(--colorLight));
+    filter: drop-shadow(1px 1px 2px var(--colorLight));
 
     z-index: 1;
 
-    transition: opacity 0.2s ease-in-out; /* Smooth fade effect */
-    opacity: 1; /* Fully visible initially */
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1; 
 
 }
 
-        @media (min-width: 0px) {.backgroundLogo {background-size: 30%;     left: -8vh;     top: 10vh;}}
-        @media (min-width: 768px) {.backgroundLogo {background-size: 60%;   left: 0vh;     top: 10vh;}}
-        @media (min-width: 992px) {.backgroundLogo {background-size: 80%;   left: 15vh;     top: 10vh;}}
-        @media (min-width: 1200px) {.backgroundLogo {background-size: 100%; left: 40vh;      top: 20vh;}}
+        @media (min-width: 0px)     {.backgroundLogo {background-size: 015%;    left: -21vh;     top: -5vh;}}
+        @media (min-width: 375px)   {.backgroundLogo {background-size: 020%;    left: -19vh;     top: -5vh;}}
+        @media (min-width: 425px)   {.backgroundLogo {background-size: 020%;    left: -17vh;     top: -5vh;}}
+        @media (min-width: 768px)   {.backgroundLogo {background-size: 030%;    left: -05vh;     top: -5vh;}}
+        @media (min-width: 1024px)  {.backgroundLogo {background-size: 035%;    left: -05vh;     top: -5vh;}}
+        @media (min-width: 1440px)  {.backgroundLogo {background-size: 050%;    left: +21vh;     top: -5vh;}}
+        @media (min-width: 2560px)  {.backgroundLogo {background-size: 070%;    left: +40vh;     top: -0vh;}}
 
 
 
@@ -165,50 +193,36 @@
 
 }
 
-
-
 .signatureText {
 
-    height: 20vh;
-    padding-top: 77vh;
+    height: 85vh;
 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-end; 
 
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 2.1rem;
+    font-style: italic;
+
+    margin-top: -70px;
+    
+    color: var(--colorLight);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    
 }
+
+    @media (min-width: 0px)     {.signatureText {};};
+    @media (min-width: 768px)   {.signatureText {};};
+    @media (min-width: 992px)   {.signatureText {};};
+    @media (min-width: 1200px)  {.signatureText {};};
+
+
 
 /* PODTRŽENÍ NAVIGAČNÍHO PANELU */
 .underliner{
     background-color: rgba(0, 0, 0, 0.0);
 }
 
-/* PODTRŽENÍ NAVIGAČNÍHO PANELU */
-._nav-underline{
-     border-bottom: 2px solid rgba(255, 255, 255, 0);
-}
 
-/* PODTRŽENÍ NAVIGAČNÍHO PANELU - KURZOR */
-._nav-underline:hover{
-    border-bottom: 2px solid white;
-}
-
-.navImage{
-    width: 30px;
-    height: 30px;;
-    border-radius: 100%;
-}
-
-
-
-/* HLAVNÍ TEXT */
-.signature-text{
-
-    font-style: italic;
-    color: var(--colorLight);
-    text-shadow: 0px 0px 5px rgb(0, 0, 0);
-
-}
 
 .borders{
     border: 2px solid rgba(210, 18, 18, var(--borders));
@@ -249,18 +263,6 @@
     border-style: groove;
 }
 
-.colorServices{
-
-    color: var(--colorLight);
-
-}
-
-.colorServicesLong{
-
-    color: var(--colorLight);
-    filter: brightness(0.9) contrast(0.9);
-
-}
 
 
 .infokruhy {
@@ -273,7 +275,6 @@
 
     color: var(--colorDark);
    
-    filter: brightness(0.8);    
     font-size: 3rem;
 
 }
@@ -295,6 +296,52 @@
 
 }
 
+.buttonCustom{
+
+    background-color: var(--colorLightBig);
+    color: var(--colorLight);
+
+    margin-top: 10px;
+    padding: 10px 100px;
+
+    border-radius: 10px;
+
+}
 
 
-/*
+/*NAVIGACE*/
+    .navbar-toggler {
+        margin-left: auto; 
+    }
+
+    /* PODTRŽENÍ NAVIGAČNÍHO PANELU */
+    ._nav-underline{
+        border-bottom: 2px solid rgba(255, 255, 255, 0);
+    }
+
+    /* PODTRŽENÍ NAVIGAČNÍHO PANELU - KURZOR */
+    ._nav-underline:hover{
+    border-bottom: 2px solid white;
+    }
+
+    .navImage{
+    width: 30px;
+    height: 30px;;
+    border-radius: 100%;
+    }
+
+    .navActive{
+        border-bottom: 2px solid var(--colorLight);
+    }
+
+    .navBackgroundDark{
+        background-color: #00000065;
+    }
+
+    .navbar{
+        transition: opacity 1s ease-in-out;
+        opacity: 1; 
+    }
+
+    @media (min-width: 0px) {.navBackgroundDark      {background-color: #00000065;}}
+    @media (min-width: 768px) {.navBackgroundDark    {background-color: #ffffff00;}}
