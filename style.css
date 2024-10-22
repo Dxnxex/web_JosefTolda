@@ -308,6 +308,17 @@
 
 }
 
+.myFooter{
+
+    color: var(--colorLightBig);
+    text-decoration: none;
+
+}
+
+.footerLogo{
+    height: 60px;
+}
+
 
 /*NAVIGACE*/
     .navbar-toggler {
@@ -347,13 +358,3 @@
     @media (min-width: 768px) {.navBackgroundDark    {background-color: #ffffff00;}}
 
 
-    .myLink{
-
-        color: var(--colorLightBig);
-        text-decoration: none;
-
-    }
-
-    .footerLogo{
-        height: 60px;
-    }
