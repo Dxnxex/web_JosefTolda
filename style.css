@@ -345,3 +345,15 @@
 
     @media (min-width: 0px) {.navBackgroundDark      {background-color: #00000065;}}
     @media (min-width: 768px) {.navBackgroundDark    {background-color: #ffffff00;}}
+
+
+    .myLink{
+
+        color: var(--colorLightBig);
+        text-decoration: none;
+
+    }
+
+    .footerLogo{
+        height: 60px;
+    }
