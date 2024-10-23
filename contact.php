@@ -24,7 +24,7 @@ try {
    $mail->Port = $_ENV['SMTP_PORT'];       
 
        // Nastavení odesílatele\
-       $mail->setFrom('email@joseftolda.cz', 'Daniel Tolda');
+       $mail->setFrom('email@joseftolda.cz', 'Josef Tolda - Web');
 
        // Nastavení příjemce
        $mail->addAddress('email@joseftolda.cz');
