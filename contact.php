@@ -8,8 +8,9 @@ require 'PHPMailer-master/src/PHPMailer.php';
 require 'PHPMailer-master/src/SMTP.php';
 
 require 'vendor/autoload.php';
-require 'vlucas/phpdotenv';
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 // Vytvoř instanci PHPMailer
 $mail = new PHPMailer(true);
