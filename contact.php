@@ -8,6 +8,8 @@ require 'PHPMailer-master/src/PHPMailer.php';
 require 'PHPMailer-master/src/SMTP.php';
 
 require 'vendor/autoload.php';
+require 'vlucas/phpdotenv';
+
 
 // Vytvoř instanci PHPMailer
 $mail = new PHPMailer(true);
