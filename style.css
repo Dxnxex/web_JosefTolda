@@ -8,21 +8,49 @@
 
 
     --colorLight: #ffffff;
-    --colorLightBig: #00fbff;
     --colorLightBig: #00b1b4;
-
-
     --colorDark: #3a484b;
-    --colorDarkBig: #0f6263;;
     --colorDarkBig: #00b1b4;;
-
-
-
     --mainBackgroundLight: #ffffff;
     --mainBackgroundDark: #3a3b4b;
 
     --borders:0;
 }
+
+/* Barevné režimy */
+.colorModeBrown {
+    --colorLight: #dfc6b8;
+    --colorLightBig: #c7a78b;
+    --colorDark: #744f3e;
+    --colorDarkBig: #7a6254;
+    --mainBackgroundLight: #fdf6ef;
+    --mainBackgroundDark: #3d3734;
+}
+
+.colorModeAntracit {
+    --colorLight: #ffffff;
+    --colorLightBig: #00b1b4;
+    --colorDark: #3a484b;
+    --colorDarkBig: #00b1b4;
+    --mainBackgroundLight: #ffffff;
+    --mainBackgroundDark: #3a3b4b;
+}
+
+.colorModeRed {
+    --colorLight: #dcbcbc;
+    --colorLightBig: #c00e0e;
+    --colorDark: #7d3131;
+    --colorDarkBig: #4d0e0e;
+    --mainBackgroundLight: #ffffff;
+    --mainBackgroundDark: #32333b;
+}
+
+
+
+
+
+
+
 
 .Warning{
 
@@ -58,15 +86,37 @@
         font-style: normal;
         font-variation-settings: "slnt" 0;
 
-        color: var(--colorLight);
+        color: var(--colorLightBig);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.30);
 
 
     }
 
 
+.navBarva{
+
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff00;
+    border: 0px;
+
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+    color: var(--colorLightBig);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.30);
+
+}
 
 /* COLORS */
+.colorWhite{
+    color: rgb(255, 255, 255);
+}
+
+
 .colorLight{
     color: var(--colorLight);
 }
@@ -112,7 +162,7 @@
 
 .background{
 
-    background: url(images/JosefTolda11.jpg) no-repeat;
+    background: var(--mainBackgroundDark) url(images/BackgroundTransparent.png) no-repeat;
     background-size: cover;
     background-position: top;
     
@@ -200,13 +250,13 @@
 
 
     font-family: "Dancing Script", cursive;
-    font-weight: 700;
-    font-size: 2.1rem;
+    font-weight: 800;
+    font-size: 2.rem;
     font-style: italic;
 
     margin-top: -70px;
     
-    color: var(--colorLight);
+    color: var(--colorLightBig);
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
     
 }
