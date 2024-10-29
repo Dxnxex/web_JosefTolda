@@ -1,6 +1,9 @@
+
+
+
 :root {
 
-    
+
     --colorLight: #69d7ff;
     --colorLight: #dfc6b8;
     --colorLight: #23e0e4;
@@ -16,6 +19,8 @@
 
     --borders:0;
 }
+
+
 
 /* Barevné režimy */
 .colorModeBrown {
@@ -162,10 +167,10 @@
 
 .background{
 
-    background: var(--mainBackgroundDark) url(images/BackgroundTransparent.png) no-repeat;
+    background: var(--mainBackgroundDark) url("../images/BackgroundTransparent.png") no-repeat;
     background-size: cover;
     background-position: top;
-    
+
     height: 100vh;
 
 }
@@ -174,20 +179,20 @@
 
 .backgroundOMne {
 
-    background: url(images/images/image_4.jpg) no-repeat;
+    background: url("../images/images/image_4.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     height: 45vh;
 
 }
 
 .backgroundSluzby{
 
-    background: url(images/images/image_3.jpg) no-repeat;
+    background: url("../images/images/image_3.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     height: 45vh;
 
 }
@@ -195,12 +200,12 @@
 .backgroundLogo{
 
     position: fixed;
-    
-    background: url("images/JosefTolda - Logo 2.png");
+
+    background: url("../images/JosefTolda - Logo 2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     width: 55vh;
     height: 55vh;
 
@@ -209,7 +214,7 @@
     z-index: 1;
 
     transition: opacity 0.2s ease-in-out;
-    opacity: 1; 
+    opacity: 1;
 
 }
 
@@ -228,9 +233,7 @@
 .backgroundDark{
 
     background-color: var(--mainBackgroundDark);
-    
-    display: flex;
-    flex-direction: column;
+
 
 }
 
@@ -238,9 +241,6 @@
 .backgroundLight{
 
     background-color: var(--mainBackgroundLight);
-    
-    display: flex;
-    flex-direction: column;
 
 }
 
@@ -255,10 +255,10 @@
     font-style: italic;
 
     margin-top: -70px;
-    
+
     color: var(--colorLightBig);
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
-    
+
 }
 
     @media (min-width: 0px)     {.signatureText {};};
@@ -303,7 +303,7 @@
 
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 
 
 
@@ -325,7 +325,7 @@
     border-radius: 100%;
 
     color: var(--colorDark);
-   
+
     font-size: 3rem;
 
 }
@@ -341,8 +341,8 @@
 
 .bordersFooter{
 
-    border: 0px solid grey;
-    border-top: 6px solid var(--colorLight);
+    border: 0px solid var(--colorDark);
+    border-top: 6px solid var(--colorLightBig);
     border-style: solid;
 
 }
@@ -368,10 +368,25 @@
     height: 40px;
 }
 
+.myContact{
+
+    color: var(--colorDarkBig);
+    background-color: var(--mainBackgroundLight);
+    border: 5px solid var(--colorDarkBig);
+    border-radius: 10px;
+
+    padding: 10px 40px;
+
+
+}
+
+@media (min-width: 0px)     {.myContact    {font-size: small;}
+@media (min-width: 768px)   {.myContact    {font-size: larger;}
+
 
 /*NAVIGACE*/
     .navbar-toggler {
-        margin-left: auto; 
+        margin-left: auto;
     }
 
     /* PODTRŽENÍ NAVIGAČNÍHO PANELU */
@@ -400,7 +415,7 @@
 
     .navbar{
         transition: opacity 1s ease-in-out;
-        opacity: 1; 
+        opacity: 1;
     }
 
     @media (min-width: 0px) {.navBackgroundDark      {background-color: #00000065;}}

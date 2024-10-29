@@ -1,36 +1,37 @@
-const toggleButton = document.getElementById('toggle-mode');
-const body = document.body;
-const colorModes = ['colorModeAntracit', 'colorModeBrown',  'colorModeRed'];
+// colorSwitcher.js
 
+const body = document.body;
+const colorModes = ['colorModeAntracit', 'colorModeBrown', 'colorModeRed'];
 let currentModeIndex = 0;
 
-// Funkce pro nastavení režimu
 function setColorMode(mode) {
-
-    colorModes.forEach(mode => body.classList.remove(mode));
+    colorModes.forEach(m => body.classList.remove(m));
     body.classList.add(mode);
 }
 
-// Režim při načítání stránky
-const savedMode = localStorage.getItem('colorMode');
-if (savedMode && colorModes.includes(savedMode)) {
-    currentModeIndex = colorModes.indexOf(savedMode);
-    setColorMode(savedMode);
-} else {
+function initializeColorSwitcher() {
+    const toggleButton = document.getElementById('toggle-mode');
+
+        //INIT
+        const savedMode = localStorage.getItem('colorMode');
+        if (savedMode && colorModes.includes(savedMode)) {
+            currentModeIndex = colorModes.indexOf(savedMode);
+            setColorMode(savedMode);
+        } else {
+            setColorMode(colorModes[currentModeIndex]);
+        }
+
+        //EVENT LISTENER
+        if (toggleButton) {
+            toggleButton.addEventListener('click', () => {
+                currentModeIndex = (currentModeIndex + 1) % colorModes.length;
+                const newMode = colorModes[currentModeIndex];
+                setColorMode(newMode);
+                localStorage.setItem('colorMode', newMode);
+                console.log(`Current mode: ${newMode}`);
+            })
+            ;
+        }
+
     
-    setColorMode(colorModes[currentModeIndex]);
-}
-
-// Kliknutí a přepnutí
-if (toggleButton) {
-    toggleButton.addEventListener('click', () => {
-        currentModeIndex = (currentModeIndex + 1) % colorModes.length;
-
-        const newMode = colorModes[currentModeIndex];
-        setColorMode(newMode);
-
-        localStorage.setItem('colorMode', newMode);
-
-        console.log(`Aktuální režim: ${newMode}`);
-    });
 }
