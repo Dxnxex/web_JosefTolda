@@ -1,6 +1,3 @@
-
-
-
 :root {
 
 
@@ -49,13 +46,6 @@
     --mainBackgroundLight: #ffffff;
     --mainBackgroundDark: #32333b;
 }
-
-
-
-
-
-
-
 
 .Warning{
 
@@ -167,7 +157,7 @@
 
 .background{
 
-    background: var(--mainBackgroundDark) url("../images/BackgroundTransparent.png") no-repeat;
+    background: var(--mainBackgroundDark) url("../images/BackgroundTransparent2.png") no-repeat;
     background-size: cover;
     background-position: top;
 
@@ -359,6 +349,14 @@
 
 }
 
+.buttonCustom:hover{
+
+    
+    background-color: var(--colorLight);
+    color: var(--colorDark);  
+
+}
+
 .myFooter{
     color: var(--colorLightBig);
     text-decoration: none;
@@ -368,20 +366,7 @@
     height: 40px;
 }
 
-.myContact{
 
-    color: var(--colorDarkBig);
-    background-color: var(--mainBackgroundLight);
-    border: 5px solid var(--colorDarkBig);
-    border-radius: 10px;
-
-    padding: 10px 40px;
-
-
-}
-
-@media (min-width: 0px)     {.myContact    {font-size: small;}
-@media (min-width: 768px)   {.myContact    {font-size: larger;}
 
 
 /*NAVIGACE*/
@@ -420,5 +405,20 @@
 
     @media (min-width: 0px) {.navBackgroundDark      {background-color: #00000065;}}
     @media (min-width: 768px) {.navBackgroundDark    {background-color: #ffffff00;}}
+
+    .myContact{
+
+        color: var(--colorDarkBig);
+        background-color: var(--mainBackgroundLight);
+        border: 5px solid var(--colorDarkBig);
+        border-radius: 10px;
+    
+        padding: 10px 40px;
+    
+    
+    }
+ 
+    @media (min-width: 0px)     {.myContact {font-size: small;}}
+    @media (min-width: 768px)   {.myContact {font-size: larger;}}
 
 

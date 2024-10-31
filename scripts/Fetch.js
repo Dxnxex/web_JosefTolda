@@ -13,9 +13,9 @@ function loadFragment(url, targetId, callback) {
 }
 
 //Fragmenty
+loadFragment('fragments/head.html', 'head');
 loadFragment('fragments/navigace.html', 'navigace', initializeColorSwitcher);
 loadFragment('fragments/footer.html', 'footer');
-loadFragment('fragments/head.html', 'head');
 
     //Index
     loadFragment('fragments/index/logo.html', 'logo');
