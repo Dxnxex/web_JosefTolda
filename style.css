@@ -157,7 +157,7 @@
 
 .background{
 
-    background: var(--mainBackgroundDark) url("./images/BackgroundTransparent2.png") no-repeat;
+    background: var(--mainBackgroundDark) url("./images/BackgroundTransparent.webp") no-repeat;
     background-size: cover;
     background-position: top;
 
@@ -169,7 +169,7 @@
 
 .backgroundOMne {
 
-    background: url("./images/images/image_4.jpg") no-repeat;
+    background: url("./images/images/image_4.webp") no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -179,7 +179,7 @@
 
 .backgroundSluzby{
 
-    background: url("./images/images/image_3.jpg") no-repeat;
+    background: url("./images/images/image_3.webp") no-repeat;
     background-size: cover;
     background-position: center;
 
