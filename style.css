@@ -410,7 +410,7 @@
 
         color: var(--colorDarkBig);
         background-color: var(--mainBackgroundLight);
-        border: 5px solid var(--colorDarkBig);
+        border: 0px solid var(--colorDarkBig);
         border-radius: 10px;
     
         padding: 10px 40px;
@@ -422,3 +422,6 @@
     @media (min-width: 768px)   {.myContact {font-size: larger;}}
 
 
+.tel {
+    text-decoration: none;
+}
