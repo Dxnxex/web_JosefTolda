@@ -1,12 +1,5 @@
 :root {
 
-
-    --colorLight: #69d7ff;
-    --colorLight: #dfc6b8;
-    --colorLight: #23e0e4;
-    --colorLight: #00dfe3;
-
-
     --colorLight: #ffffff;
     --colorLightBig: #00b1b4;
     --colorDark: #3a484b;
@@ -16,7 +9,6 @@
 
     --borders:0;
 }
-
 
 
 /* Barevné režimy */
@@ -94,7 +86,7 @@
     padding: 0;
 
     background: #ffffff00;
-    border: 0px;
+    border: 0;
 
     font-family: "Afacad Flux", sans-serif;
     font-weight: 600;
@@ -241,20 +233,20 @@
 
     font-family: "Dancing Script", cursive;
     font-weight: 800;
-    font-size: 2.rem;
+    font-size: 2.0rem;
     font-style: italic;
 
     margin-top: -70px;
 
     color: var(--colorLightBig);
-    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
 
 }
 
-    @media (min-width: 0px)     {.signatureText {};};
-    @media (min-width: 768px)   {.signatureText {};};
-    @media (min-width: 992px)   {.signatureText {};};
-    @media (min-width: 1200px)  {.signatureText {};};
+    @media (min-width: 0px)             {.signatureText {};}
+    @media (min-width: 768px)       {.signatureText {};}
+    @media (min-width: 992px)       {.signatureText {};}
+    @media (min-width: 1200px)      {.signatureText {};}
 
 
 
@@ -325,7 +317,7 @@
     width: 130px;
 }
 
-    @media (min-width: 0px) {.logoPartners {    width: 130;    }}
+    @media (min-width: 0px) {.logoPartners {    width: 130px;    }}
     @media (min-width: 768px) {.logoPartners {    width: 210px;    }}
 
 
@@ -410,7 +402,7 @@
 
         color: var(--colorDarkBig);
         background-color: var(--mainBackgroundLight);
-        border: 0px solid var(--colorDarkBig);
+        border: 0 solid var(--colorDarkBig);
         border-radius: 10px;
     
         padding: 10px 40px;
@@ -424,4 +416,23 @@
 
 .tel {
     text-decoration: none;
+}
+
+.contactImage{
+    text-decoration: none;
+
+    padding: 50px 50px 20px;
+    margin: auto;
+
+    font-weight: 400;
+    font-size: clamp(0.9rem, 1.3vw, 3vw);
+
+    color: var(--colorLight);
+}
+
+.contactImage img{
+
+    width: 6vh;
+    height: auto;
+
 }

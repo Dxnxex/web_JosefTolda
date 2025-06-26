@@ -18,7 +18,10 @@ loadFragment('fragments/navigace.html', 'navigace', initializeColorSwitcher);
 loadFragment('fragments/footer.html', 'footer');
 
     //Index
-    loadFragment('fragments/index/logo.html', 'logo');
-    loadFragment('fragments/index/signature.html', 'signature');
-    loadFragment('fragments/index/indexSluzby.html', 'indexSluzby');
-
+    loadFragment('fragments/logo.html', 'logo');
+    loadFragment('fragments/signature.html', 'signature');
+    loadFragment('fragments/sluzby.html', 'sluzby');
+    loadFragment('fragments/reference.html', 'reference');
+    loadFragment('fragments/kontakt.html', 'kontakt');
+    loadFragment('fragments/partneri.html', 'partneri');
+    loadFragment('fragments/infoKruhy.html', 'infoKruhy', startCounters);

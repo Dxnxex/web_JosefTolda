@@ -33,8 +33,8 @@
 <header>
     <div class="background">
         <div class="">
-            
-            
+
+
             <div id="navigace"></div>   
             <div id="logo"></div>   
             <div id="signature"></div>   
@@ -57,188 +57,32 @@
         <div class="row my-1 justify-content-center ">
 
 
-                <section class="col-12 col-sm-12 col-md-12 | borders | text-center | my-3">
-                    <a href="tel:604249100" class="tel borders"><span  class="myContact | fw-bold ">Mobil: +420 604 249 100</span></a>
-                </section>
-
-                <section class="col-12 col-sm-12 col-md-12 | borders | text-center | my-3">
-                    <a href="mailto:jtolda68@gmail.com" class="tel borders"><span class="myContact | fw-bold ">Email: jtolda68@gmail.com</span></a>
-                </section>
-
+            <!-- Adresa & Telephone -->
+            <div class="flex-column me-3  text-center">
+                <a href="tel:604249100"   class="tel borders"><span class = "contactImage"><img  src="images/icons/phone.png" alt="Telefoní kontakt #1">Mobil: +420 604 249 100</span></a>
+                <a href="mailto:jtolda68@gmail.com" class="tel borders"><span class = "contactImage"><img src="images/icons/mail.png" alt="Email">Email: jtolda68@gmail.com</span></a>
+            </div>
         </div>
+
     </article>
 </div>
 
-<!--PŘEDSTAVENÍ | KONEC -->
-<div id="indexSluzby"></div>
 
-
-<!--INFOKRUHY | KONEC -->
-<div class="backgroundLight">
-    <section class="container |py-5">
-        <div class="row | text-center | borders">
-            <div class="col-sm-12 col-md | py-3 | text-center d-flex flex-column align-items-center">
-                <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig ">0</div>
-                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold colorDarkBigBold | fontMain">LET BANKOVNÍ PRAXE</div>
-            </div>
-
-            <div class="col-sm-12 col-md text-center d-flex flex-column align-items-center py-3">
-                <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig">0</div>
-                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold colorDarkBigBold | fontMain">SPOKOJENÝCH EXTERNÍCH PARTNERŮ</div>
-            </div>
-
-            <div class="col-sm-12 col-md text-center d-flex flex-column align-items-center py-3">
-                <div class="d-flex align-items-center justify-content-center | infokruhy counter | fontBig"></div>
-                <div class="d-flex align-items-end justify-content-center | py-4 | fs-3 fw-bold colorDarkBigBold | fontMain">KONZULTOVANÝCH HYPOTÉK</div>
-            </div>
-        </div>
-    </section>
-</div>
-<!--INFOKRUHY | KONEC -->
-
-
-
-
-<!--REFERENCE | ZAČÁTEK -->
-<div class="backgroundLight">
-<article class="container ">
-    <div class="row | justify-content-end align-items-center text-center | borders">
-    
-
-        <div class="border"></div>
-
-        <!--REFERENČNÍ NADPIS-->
-        <section class="col-12 col-sm-3 col-md-3 | borders">
-            <p>
-                <h2 class="fontMain fs-1 fw-bold | colorDarkBigBold">REFERENCE</h2>
-            </p>
-        </section>
-
-        <!--REFERENČNÍ OBRÁZEK-->
-        <section class="col-12 col-sm-9 col-md-2 borders | justify-content-end align-items-center text-center">
-            <p class="pt-3">
-                <!-- <img src="images/references/Reference1.jpg" alt="reference" srcset="" class="referenceImage align"> -->
-            </p>
-        </section>
-        
-        <!--REFERENČNÍ TEXT-->
-        <section class="col-12 col-sm-9 col-md-7 borders my-5">
-            <h1 class="fontMain fs-4 fw-bold | text-center | colorDarkBigBold">Beáta Šejnová</h1>
-            <p class="mt-6 align-items-center text-center | fontMain colorDark | fs-5 mx-5">
-                "Když jsme s partnerem potřebovali hypotéku a úvěr na rekonstrukci, chtěli jsme si nechat poradit od odborníka, jednoznačně první a poslední možností tento člověk, se kterým spolupracujeme už dlouho a
-                ví jak to chodí."
-                <br>
-            </p>
-        </section>   
-    
-
-        </div>
-    </article>
-</div>
-<!--REFERENCE | KONEC -->
-
-<!--KONTAKT | ZAČÁTEK -->
-<div class="backgroundDark">
-
-    <article class="container ">
-        <div class="row | justify-content-end align-items-center text-center">
-
-            <section class="col-12 col-sm-9 col-md-12 | borders ">
-                    
-                <div class="my-5">
-                    
-                    <h2 class="fontMain fs-2 fw-bold | colorLightBig | mb-2">KONTAKTUJTE MĚ</h2>
-
-
-                    <form action="contact.php" method="POST">
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="name" class="form-label | colorLight fw-bold fs-5">Jméno</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Vaše jméno" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label | colorLight fw-bold fs-5">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Váš email" required>
-                            </div>
-                        </div>
-                
-                        <div class="mb-3">
-                            <label for="phone" class="form-label | colorLight fw-bold fs-5 ">Telefon</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Váš telefon">
-                        </div>
-                
-                        <div class="mb-3">
-                            <label for="message" class="form-label | colorLight fw-bold fs-5">Zpráva</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Vaše zpráva" required></textarea>
-                        </div>
-                
-                
-                        <div class="text-center">
-                            <button type="submit" class="btn buttonCustom | fw-bold fs-6">Odeslat</button>
-                        </div>
-                    </form>
-
-
-
-                </div>
-
-
-            </section>   
-        
-            </div>
-        </article>
-    </div>
-<!--KONTAKT | KONEC -->
-
-<!--PARTNEŘI (ZAČÁTEK)-->
-<div class="backgroundLight">
-    <div class="container | justify-content-end align-items-center text-center ">
-        <section class="col-12 col-sm-3 col-md-12 | borders |">
-            
-            
-            <p>
-                <h2 class="fontMain fs-1 fw-bold | colorDarkBigBold">STAVEBNÍ SPOŘENÍ</h2>
-            </p>
-        
-            <div class="border my-3"></div>
-            <a href="https://www.kb.cz/cs/modra-pyramida">  <img src="images/partners/partners_MP.webp" alt="Modrá pyramida stavební spořitelna, a.s." srcset="" class="logoPartners | px-3 | borders"></a>
-            <a href="https://www.rsts.cz">                  <img src="images/partners/partners_RBstavebni.webp" alt="Raiffeisen stavební spořitelna a.s." srcset="" class="logoPartners | px-3 | borders"></a>
-            <a href="https://www.burinka.cz">               <img src="images/partners/partners_SSČS.webp" alt="Stavební spořitelna České spořitelny, a.s." srcset="" class="logoPartners | px-3 | borders"></a>
-
-            
-    
-        <p>
-            <h2 class="fontMain fs-1 fw-bold | colorDarkBigBold" >ÚVĚRY</h2>
-        </p>
-        <div class="border  my-3"></div>
-        <a href="https://www.csas.cz">                      <img src="images/partners/partners_CSAS.webp" alt="Česká spořitelna, a.s." srcset="" class="logoPartners | px-3 | borders"></a>
-        <a href="https://www.csob.cz">                      <img src="images/partners/partners_CSOB.webp" alt="ČSOB Hypoteční banka, a.s." srcset="" class="logoPartners | px-3 | borders"></a>
-        <a href="https://www.unicreditbank.cz">             <img src="images/partners/partners_UNI.webp" alt="UniCredit Bank, a.s." srcset="" class="logoPartners | px-3 | borders"></a>
-        <a href="https://www.rb.cz">                        <img src="images/partners/partners_RB.webp" alt="Raiffeisenbank a.s." srcset="" class="logoPartners | px-3 | borders"></a>
-        <a href="https://www.kb.cz">                        <img src="images/partners/partners_KB.webp" alt="Komerční banka, a.s." srcset="" class="logoPartners | px-3 | borders"></a>
-        <a href="https://www.mbank.cz">                     <img src="images/partners/partners_Mbank.webp" alt="mBank S.A." srcset="" class="logoPartners | px-3 | borders"></a>
-        <a href="https://www.oberbank.cz">                  <img src="images/partners/partners_Ober.webp" alt="Oberbank AG" srcset="" class="logoPartners | px-3 | borders"></a>
-
-        <p>
-            <h2 class="fontMain fs-1 fw-bold | colorDarkBigBold">REALITY</h2>
-        </p>
-
-        <div class="border my-3"></div>
-        <a href="https://www.krkonose-reality.cz">          <img src="images/partners/partners_Krkonose.webp" alt="Česká spořitelna, a.s." srcset="" class="logoPartners | px-3 | borders pb-5"></a>
-
-        </section>
-        
-    </div>
-</div>
-<!--PARTNEŘI (KONEC)-->
+    <div id="sluzby"></div>
+    <div id="infoKruhy"></div>
+    <div id="reference"></div>
+    <div id="kontakt"></div>
+    <div id="partneri"></div>
 
 
 <!--SCRIPTY-->
 <script src="scripts/colorSwitcher.js"></script>
+<script src="scripts/infoCircle.js"></script>
+<script src="scripts/Scroll.js"></script>
+
 <script src="scripts/Fetch.js"></script>
 
-<script src="scripts/Scroll.js"></script>
-<script src="scripts/infoCircle.js"></script>
+
 
 
 
